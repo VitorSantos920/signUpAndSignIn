@@ -1,31 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Faça seu cadastro e aproveite nossos conteúdos. É grátis!">
-        <meta name="keywords" content="Login, cadastro, sign up">
+        <meta name="keywords" content="Login, cadastro, sign up, sign in">
         <meta name="author" content="Vitor Hugo Pires dos Santos">
+        <link rel="shortcut icon" href="./assets/img/add-user.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Sign Up</title>
     </head>
-
-    <body>
+    <!-- oncontextmenu="return false" ondragstart="return false" onselectstart="return false" -->
+    <body >
         <main>
             <div class="container">
                 <div class="box">
-                    <h1 id="main-title">Criar Conta</h1>
-                    <p>Crie sua conta e aproveite nossos conteúdos.</p>
+
+                    <h1 id="main-title">Create Account</h1>
+                    <p id="main-desc">Welcome, create your account to enjoy our content.</p>
                     
-                    <form action="#" method="post" autocomplete="on">
+
+                    <form action="#" method="post">
                         <fieldset>
-                            <label for="nome"></label>
-                            <input type="text" name="" id="nome" value="a">
+
+
+                            <div class="input-form">
+                                <div id="img-user">
+                                    <img src="./assets/img/user.png"  alt="img_user">
+                                </div><!--img-user-->
+                                <input type="text" name="name" id="name" placeholder="Name">
+                            </div>  <!--input-form-->
+
+                            <div class="input-form">
+                                <div id="img-city">
+                                    <img src="./assets/img/city.png" alt="img_city">
+                                </div>
+                                <input type="text" name="city" id="city"  placeholder="City">
+                            </div>
+
+                            <div class="input-form">
+                                <div id="img-state">
+                                    <img src="./assets/img/brasil.png" alt="img_state">
+                                </div>
+                                <input type="text" name="state" id="state"  placeholder="State">
+                            </div>
+
+                            <div class="input-form">
+                                <div id="img-dateNasc">
+                                    <img src="./assets/img/dateNasc.png" alt="img_dateNasc">
+                                </div>
+                                <input type="date" name="dateNasc" id="dateNasc">
+                            </div>
+
+                            <div class="input-form">
+                                <div id="img-genero">
+                                    <img src="./assets/img/genero.png" alt="img_genero">
+                                </div>
+                                <div id="generos">
+                                    <input type="radio" name="genero" id="masc" value="masculino">
+                                    <label for="masc">Male</label>
+                                    <input type="radio" name="genero" id="fem" value="feminino">
+                                    <label for="fem">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="input-form">
+                                <div id="img-email">
+                                    <img src="./assets/img/email.png" alt="img_email">
+                                </div>
+                                <input type="email" name="email" id="email" placeholder="email@example.com">
+                            </div>
+
+                            <div class="input-form">
+                                <div id="img-password">
+                                    <img src="./assets/img/password.png" alt="img_password">
+                                </div>
+                                <input type="password" name="password" id="password" placeholder="Password">
+                                <img src="./assets/img/openEye.png" class="eye" onmousedown="showPassword()" onmouseup="hiddenPassword()"  onmousemove="hiddenPasswordMove()" alt="img_openEye">
+                            </div>
+
+                            <div class="input-form">
+                                <div id="img-password">
+                                    <img src="./assets/img/passwordRepeat.png" alt="img_password">
+                                </div>
+                                <input type="password" name="password" id="passwordRepeat" placeholder="Repeat your password">
+                                <img src="./assets/img/openEye.png" class="eye" onmousedown="showPasswordRepeat()" onmouseup="hiddenPasswordRepeat()" onmousemove="hiddenPasswordMoveRepeat()" alt="img_openEye">
+                            </div>
+
+                            
+                            <button type="submit" id="signup">SIGN UP &rarr;</button>  
                         </fieldset>
                     </form>
+                    <p id="alreadyAccount">Alredy have an account? <a href="./signin.html"> Sign In</a>.</p>
+
+
                 </div>
             </div>
         </main>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
