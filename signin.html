@@ -13,10 +13,38 @@
 
     <body>
         <div class="container">
-            <div class="box">
-                <a href="./index.html" class="leftArrow" style="text-decoration: none;">&leftarrow;</a>
-                <h1>teste</h1>
+            <div class="box login">
+                <a href="./index.html" class="leftArrow">&leftarrow;</a>
+                <h1 class="main-title">Login</h1>
+                <p class="main-desc">Please sign in to continue.</p>
+
+                <form action="#" method="post">
+                    <fieldset>
+
+
+                        <div class="input-form">
+                            <div id="img-email">
+                                <img src="./assets/img/email.png" alt="img_email">
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="input-form">
+                            <div id="img-password">
+                                <img src="./assets/img/password.png" alt="img_password">
+                            </div>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <img src="./assets/img/openEye.png" class="eye" onmousedown="showPassword()" onmouseup="hiddenPassword()"  onmousemove="hiddenPasswordMove()" alt="img_openEye">
+                        </div>
+
+                        <button type="submit" class="buttonForm">SIGN IN &rarr;</button>  
+                    </fieldset>
+                </form>
+
+                <p class="legendForm signin"><a href="#">Forgot your password?</a></p>
+                <p class="legendForm signin">Don't have an account? <a href="./index.html"> Sign Up</a>.</p>
             </div>
         </div>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
